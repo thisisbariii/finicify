@@ -7,4 +7,8 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  base: './', // 👈 ADD THIS LINE
+  build: {
+    outDir: 'dist', // 👈 Ensures Vercel finds your build
+  },
 });
